@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Cửa hàng - MuaChungTool</title>
+</head>
+<body>
+
+<div class="product-archive">
+<div class="archive-header">
+<h1 class="page-title">Cửa hàng</h1>
+<div class="archive-meta">
+<span class="result-count">Hiển thị 1-16 của 372 kết quả</span>
+<div class="archive-filters">
+<div class="filter-group">
+<label>Sắp xếp:</label>
+<label class="filter-option"><input type="checkbox"> Giá giảm dần</label>
+<label class="filter-option"><input type="checkbox"> Giá tăng dần</label>
+<label class="filter-option"><input type="checkbox"> Mới nhất</label>
+<label class="filter-option"><input type="checkbox"> Cũ nhất</label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="sidebar">
+<div class="widget">
+<h3>TRẠNG THÁI</h3>
+<div class="widget-content">
+<label class="filter-option"><input type="checkbox"> Có Sẵn</label>
+<label class="filter-option"><input type="checkbox"> Mua Chung</label>
+</div>
+</div>
+
+<div class="widget">
+<h3>DANH MỤC SẢN PHẨM</h3>
+<div class="widget-content">
+<label class="filter-option"><input type="checkbox"> Audio Editing</label>
+<label class="filter-option"><input type="checkbox"> Builder</label>
+<label class="filter-option"><input type="checkbox"> Công cụ SEO</label>
+<label class="filter-option"><input type="checkbox"> WordPress</label>
+</div>
+</div>
+</div>
+
+<div class="archive-grid">
+<div class="product-card">
+<div class="product-image">
+<span class="status-badge">Có Sẵn</span>
+<img src="https://muachungtool.com/wp-content/uploads/2021/09/Vidiq.png" alt="VIC Modern Cursive Font" loading="lazy">
+</div>
+<div class="product-info">
+<h3><a href="#">VIC Modern Cursive Font</a></h3>
+<div class="product-price">
+<span class="sale-price">180.000₫</span>
+<span class="regular-price">599.000₫</span>
+</div>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-image">
+<span class="status-badge">Có Sẵn</span>
+<img src="https://muachungtool.com/wp-content/uploads/2021/09/Vidiq.png" alt="Midjourney Mastery Guide" loading="lazy">
+</div>
+<div class="product-info">
+<h3><a href="#">Midjourney Mastery Guide</a></h3>
+<div class="product-price">
+<span class="sale-price">299.000₫</span>
+<span class="regular-price">1.899.000₫</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<style>
+.product-archive{max-width:1200px;margin:0 auto;padding:24px;font-family:'Inter',sans-serif}
+.archive-header{margin-bottom:32px}
+.page-title{font-size:24px;font-weight:600;margin:0 0 16px;color:#1a1a1a}
+.archive-meta{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:24px}
+.result-count{color:#666;font-size:14px}
+.archive-filters{display:flex;gap:24px;align-items:center}
+.filter-group{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.filter-option{display:flex;align-items:center;gap:6px;font-size:14px;color:#333;cursor:pointer}
+.filter-option input{cursor:pointer}
+.sidebar{width:280px;float:left;margin-right:24px}
+.widget{background:#fff;border-radius:8px;padding:16px;margin-bottom:24px;border:1px solid #eee}
+.widget h3{font-size:16px;font-weight:600;margin:0 0 16px;color:#1a1a1a}
+.widget-content{display:flex;flex-direction:column;gap:12px}
+.archive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-left:304px}
+.product-card{background:#fff;border:1px solid #eee;border-radius:8px;overflow:hidden;transition:all .3s ease}
+.product-card:hover{border-color:#008037;box-shadow:0 4px 12px rgba(0,0,0,0.05);transform:translateY(-2px)}
+.product-image{position:relative;padding-top:100%;background:#f8f9fa}
+.product-image img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;padding:16px}
+.status-badge{position:absolute;top:12px;left:12px;background:#008037;color:#fff;padding:4px 8px;border-radius:4px;font-size:12px;font-weight:500}
+.product-info{padding:16px}
+.product-info h3{margin:0 0 8px;font-size:16px;line-height:1.4}
+.product-info h3 a{color:#1a1a1a;text-decoration:none;transition:color .2s ease}
+.product-info h3 a:hover{color:#008037}
+.product-price{display:flex;gap:8px;align-items:center}
+.sale-price{font-weight:600;color:#008037;font-size:16px}
+.regular-price{text-decoration:line-through;color:#666;font-size:14px}
+@media (max-width:992px){.sidebar{width:100%;float:none;margin:0 0 24px}.archive-grid{margin-left:0}}
+@media (max-width:768px){.archive-meta{flex-direction:column;align-items:flex-start}.filter-group{flex-wrap:wrap}}
+</style>
+
+</body>
+</html>
